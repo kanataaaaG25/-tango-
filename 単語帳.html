@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>★単語帳★</title>
+    <style>
+        .button{
+            width: 200px;
+            height: 50px;
+        }
+        .card{
+            font-size:50px;
+            text-align: center;
+            padding: 20px;
+        }
+        #omote{
+            color: #FF9999;
+        }
+        #ura{
+            background-color: #FF9999;
+        }
+    </style>
+    <!--.cardで全体の属性を指定、#id名で各idの属性を指定--> 
+    <!--paddingは、対象物の内側の空白--> 
+</head>
+<body>
+<h1>
+    <center>
+      <b>★単語帳★</b>
+    </center>
+    </h1> 
+<p>
+    <center>
+    赤と青セルで使える単語帳です！<br>
+    表の単語を覚えたい場合は、赤セルを<br>
+    裏の説明を覚えたい場合は、青セルを<br>
+    かざしてください★<br>
+    </center>
+</p>
+		<button onclick="tangoshow()" class="button"><b>単語帳をめくる</button>
+    <br><br>
+    <button onclick="henko1show()" class="button"><b>変更する</button>
+	<div id="omote" class="card">
+	<center>
+		<span style="color:black";>
+			表
+		</span>
+	</center>
+    </div>
+    <center>  
+            ---------------
+    </center>	
+	<div id="ura" class="card">
+		<center>
+        <span style="color:white;background-color:#FF9999";>
+            裏
+        </span>
+		</center>
+		</div> 
+        <button onclick="henko2show()" class="button"><b>変更する</button>
+	<script src="単語帳.js"></script>
+</body>
+</html>
+<!--  idは、一意でないといけないので、id="omote";#id0;#id1のような指定はできない。
+.classで属性をしていする（headの中で）--> 
